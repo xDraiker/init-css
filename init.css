@@ -1,0 +1,161 @@
+/* init.css v1.0.0-beta */
+:root{
+    --color-base:#dfdfdf; 
+    --color-text:#1d1d1d; 
+    --color-muted:#c9c9c9; 
+    --color-accent:#eb5f46; 
+    --color-success:#28a770; 
+
+    --font-heading:Georgia, 'Times New Roman', Times, serif;
+    --font-body:Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+    :root{
+        --color-base:#1d1d1d; 
+        --color-text:#dfdfdf; 
+        --color-muted:#313131; 
+    }
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    color-scheme: dark light;
+    font-size: 16px;
+    scrollbar-color: var(--color-text) var(--color-base);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+body{
+    display: block;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0.5rem 0.8rem;
+    font-size: 1rem;
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-base);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0.25rem 0;
+    padding: 0;
+    font-family: var(--font-heading);
+    text-wrap: balance;
+}
+h1{
+    font-size: 2.4rem;
+}
+h2{
+    font-size: 2.2rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.8rem;
+}
+h5{
+    font-size: 1.6rem;
+}
+h6{
+    font-size: 1.4rem;
+}
+p{
+    margin: 1rem 0;
+    padding: 0;
+    text-wrap: pretty;
+}
+a{
+    color: var(--color-success);
+    text-decoration: none;
+}
+b,
+strong,
+time{
+    font-weight: bold;
+}
+mark{
+    margin:0;
+    padding: 0 0.2rem;
+    color: var(--color-base);
+    border-radius: 0.2rem;
+    background-color: var(--color-success);
+}
+small{
+    margin: 0;
+    padding: 0;
+    font-size: 0.8em;
+}
+sup,
+sub{
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+    font-size: 0.8em;
+}
+sub {
+    bottom: -0.2em;
+}
+sup {
+    top: -0.5em;
+}
+kbd{
+    margin: 0;
+    padding: 0 0.2rem;
+    font-family: var(--font-code);
+    border: 1px solid;
+    border-radius: 0.2rem;
+}
+samp{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-code);
+    color: var(--color-accent);
+}
+code{
+    margin:0;
+    padding: 0 0.2rem;
+    border-radius: 0.2rem;
+    background-color: var(--color-muted);
+}
+pre{
+    margin: 0;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    background-color: var(--color-muted);
+}
+
+ul, ol, menu{
+    margin: 0.2rem 2rem;
+    padding: 0;
+}
+dl{
+    margin: 0.2rem 1rem;
+    padding: 0;
+}
+dt{
+    font-weight: bold;
+}
+dd{
+    margin-bottom: 0.2rem;
+}
+li::marker{
+    color: var(--color-success)
+}
+
+::selection{
+    color: var(--color-base);
+    background-color: var(--color-text);
+}
+@media(hover:hover){
+    a:hover{
+        text-decoration: underline;
+    }
+}
