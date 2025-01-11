@@ -22,7 +22,7 @@
     <h6>Heading 6</h6>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolorem perspiciatis eos recusandae, harum deleniti quo fuga architecto a ducimus, quisquam in quibusdam alias quos omnis est ab! Perspiciatis minus dicta nemo commodi animi obcaecati, neque molestias officia! Quam dicta ea consequatur ex natus. Odit dolorem id dolore ut magni.</p>
     <hr>
-    <h1>Inline elements</h1>
+    <h2>Inline elements</h2>
     <p><code>&#60;code&#62;</code>: Lorem, <code>code</code> ipsum dolor.</p>
     <p><code>&#60;a&#62;</code>: Lorem, <a href="#">ancor</a> ipsum dolor.</p>
     <p><code>&#60;b&#62;</code>, <code>&#60;strong&#62;</code> & <code>&#60;time&#62;</code>: Lorem, <b>bold</b>, <strong>strong</strong> & <time datetime="2025-01-08">08-01-2025</time> ipsum dolor.</p>
@@ -33,6 +33,7 @@
     <p><code>&#60;kbd&#62;</code>: Lorem, <kbd>kbd</kbd> ipsum dolor.</p>
     <p><code>&#60;samp&#62;</code>: Lorem, <samp>samp</samp> ipsum dolor.</p>
     <hr>
+    <h2>Pre</h2>
     <pre>
         :root{
             --color-base:#dfdfdf; 
@@ -56,7 +57,7 @@
         }</code>
     </pre>
     <hr>
-    <h1>List</h1>
+    <h2>List</h2>
     <ul>
         <li>item 1</li>
         <li>item 2</li>
@@ -81,6 +82,7 @@
         <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae in impedit, eligendi dignissimos, earum cumque inventore at architecto exercitationem iusto facilis expedita laborum qui non? Maxime natus doloremque accusantium nam?</dd>
     </dl>
     <hr>
+    <h2>Fomr</h2>
     <form action="#">
         <fieldset>
             <legend>Button</legend>
@@ -98,7 +100,126 @@
             <input type="reset" disabled>
             <input type="file" disabled>
         </fieldset>
+        <fieldset>
+            <legend>options</legend>
+            <label for="">radio</label>
+            <br>
+            <input type="radio" name="radio item">
+            <input type="radio" name="radio item">
+            <input type="radio" name="radio item">
+            <br>
+            <br>
+            <label for="">checkbox</label>
+            <br>
+            <input type="checkbox">
+        </fieldset>
+        <fieldset>
+            <legend>widgets</legend>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+            <br>
+            <label for="">Rango: </label>
+            <input type="range">
+            <br>
+            <label for="">Progress: </label>
+            <progress id="file" max="100" value="70">70%</progress>
+        </fieldset>
+        <fieldset>
+            <legend>Type text</legend>
+            <label for="text">Text: </label>
+            <input id="text" type="text" placeholder="text"> 
+            <br>
+            <label for="text">Text disabled: </label>
+            <input id="text" type="text" value="text value" disabled> 
+            <br>
+            <label for="number">Number: </label>
+            <input type="number">
+            <br>
+            <label for="">Email: </label>
+            <input type="email">
+            <br>
+            <label for="">Password: </label>
+            <input type="password">
+            <br>
+            <label for="">Search: </label>
+            <input type="search">
+            <br>
+            <label for="">Telefono: </label>
+            <input type="tel">
+            <br>
+            <label for="">URL: </label>
+            <input type="url">
+            <br>
+            <label for="">Text area</label>
+            <textarea name="" id=""></textarea>
+            <br>
+            <label for="">Select: </label>
+            <select name="" id="">
+                <option value="">Option 1</option>
+                <option value="">Option 2</option>
+                <optgroup label="Option 3">
+                    <option value="">Option 3.1</option>
+                    <option value="">Optipon 3.2</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="">Output: </label>
+            <output>OUTPUT</output>
+        </fieldset>
+        <fieldset>
+            <legend>Date and Time</legend>
+            <label for="date">Fecha: </label>
+            <input type="date">
+            <br>
+            <label for="">Fecha y hora: </label>
+            <input type="datetime-local">
+            <br>
+            <label for="">Mes: </label>
+            <input type="month">
+            <br>
+            <label for="">Hora: </label>
+            <input type="time" name="" id="">
+            <br>
+            <label for="">Semana: </label>
+            <input type="week">
+            <br>
+        </fieldset>
     </form>
-
+    <hr>
+    <h2>Table</h2>
+    <table>
+        <caption>Lorem ipsum dolor sit amet.</caption>
+        
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>a-000</th>
+                <td>Juan</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>a-001</th>
+                <td>María</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>a-003</th>
+                <td>Georgina</td>
+                <td>208</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Total</th>
+                <td>216</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>

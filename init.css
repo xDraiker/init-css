@@ -1,4 +1,4 @@
-/* init.css v1.0.0-beta */
+/* init.css v1.2.0-beta */
 :root{
     --color-base:#dfdfdf; 
     --color-text:#1d1d1d; 
@@ -131,8 +131,9 @@ pre{
     border-radius: 0.2rem;
     background-color: var(--color-muted);
 }
-
-ul, ol, menu{
+ul, 
+ol, 
+menu{
     margin: 0.2rem 2rem;
     padding: 0;
 }
@@ -166,10 +167,34 @@ legend {
     font-size: 1em;
     font-weight: bold;
 }
-label{
-    font-size: 1em;
+input,
+textarea,
+select{
+    margin: 0.25rem 0;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--color-muted);
+    accent-color: var(--color-text);
 }
-
+textarea{
+    min-height: 1.75rem;
+}
+select{
+    padding: 0.25rem 0.5rem;
+    columns: var(--color-text);
+    border: 1px solid var(--color-muted);
+    background-color: var(--color-base);
+}
+optgroup{
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+output{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-accent);
+}
 button,
 [type="button"],
 [type="reset"],
@@ -190,6 +215,9 @@ input::file-selector-button{
     border: 1px solid var(--color-success);
     background-color: var(--color-success);
 }
+input[type="file"]{
+    border: none;
+}
 button:active,
 [type="button"]:active,
 [type="reset"]:active,
@@ -198,7 +226,71 @@ input::file-selector-button:active{
     transform: scale(0.95);
     transition: transform 0.2s;
 }
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"]{
+    margin: 0 1rem 0 0;
+    padding: 0;
+    accent-color: var(--color-success);
+}
+progress {
+    vertical-align: baseline;
+    border-radius: 0.2rem;
+    border: 1px solid var(--color-text);
+    background-color: var(--color-text);
+}
+progress::-webkit-progress-bar {
+    background-color: var(--color-text);
+} 
+progress::-webkit-progress-value {
+    background-color: var(--color-success);
+}
+progress::-moz-progress-bar {
+    background-color: var(--color-success);
+}
+img, 
+picture,
+video, 
+svg{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+table{
+    margin: 0.5rem 0;
+    border-collapse: collapse;
 
+    caption{
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    th, 
+    td{
+        margin: 0;
+        padding: 0.25rem 1rem;
+        font-size: 1rem;
+    }
+    th{
+        border: 1px solid;
+        background-color: var(--color-muted);
+    }
+    td{
+        border: 1px solid;
+    }
+    tfoot{
+        th,
+        td{
+            padding: 0.5rem;
+            color: var(--color-success);
+            border: none;
+        }
+        th{
+            text-align: end;
+            background-color: transparent;
+        }
+    }
+}
 ::selection{
     color: var(--color-base);
     background-color: var(--color-text);
